@@ -21,3 +21,8 @@ Route::get('/', function () {
 // }
     return view('landingpage');
 });
+Route::get('/72shssfsdgearadash2828282almessage', function () {
+
+    return view('message');
+});
+Route::post('/messageupload', 'App\Http\Controllers\MessageController@storeMessage')->name('message.upload');

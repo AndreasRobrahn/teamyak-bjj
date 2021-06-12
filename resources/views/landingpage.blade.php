@@ -241,7 +241,7 @@
         </div>
         </div>
       </div>
-      <div class="row m-0">
+      <div class="row m-0 justify-content-center">
           <p class="headline">Das Team</p>
       </div>
       <div class="row m-1">
@@ -253,7 +253,7 @@
   </div>
   <div class="row m-1 bg-white justify-content-center mt-3">
     <div class="col-sm-12 col-md-8 p-0 ">
-      <p><h3 class="text-center headline1">Unsere Trainingszeiten</h3> </p>
+      <p><h3 class="text-center headline1"><u>Unsere Trainingszeiten</u></h3> </p>
       <hr>
       <div class="table-responsive shadow-lg">
       <table class="table table-striped " id="training">
@@ -345,8 +345,8 @@
         <img src="{{asset('images/72754548_2191665604459662_3955709311052677120_n.jpg')}}" alt="" class="img-fluid">
       </div>
   </div>
-  <div class="container-fluid m-0 p-0 mt-3  secondaryColor">
-  <div class="row text-white justify-content-center">
+  <div class="container-fluid m-0 p-0 mt-3 secondaryColor">
+  <div class="row m-0 text-white justify-content-center">
       <div class="col-sm-12 col-md-6 p-2">
          <h4 id='contact' class=" headline1"><u>Kontaktformular</u></h4>
       </div>
@@ -354,7 +354,7 @@
   <form class="" action="{{route('sendNotification')}}" method="post">
     @csrf
 
-  <div class="row justify-content-center text-white">
+  <div class="row m-0 justify-content-center text-white">
     <div class="col-sm-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
       <div class="w-100" style="display:block;">
         <label for="name">Name</label>
@@ -362,7 +362,7 @@
       </div>
     </div>
   </div>
-  <div class="row justify-content-center text-white">
+  <div class="row m-0 justify-content-center text-white">
       <div class="col-sm-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
         <div class="w-100" style="display:block;">
           <label for="name">Email</label>
@@ -370,7 +370,7 @@
         </div>
       </div>
   </div>
-  <div class="row justify-content-center text-white">
+  <div class="row m-0 justify-content-center text-white">
       <div class="col-sm-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
         <div class="w-100" style="display:block;">
           <label for="subject">Betreff</label>
@@ -378,7 +378,7 @@
         </div>
       </div>
   </div>
-  <div class="row justify-content-center text-white">
+  <div class="row m-0 justify-content-center text-white">
       <div class="col-sm-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
         <div class="w-100" style="display:block;">
             <label for="message">Deine Nachricht</label>
@@ -386,11 +386,11 @@
         </div>
       </div>
   </div>
-  <div class="row justify-content-center text-white">
+  <div class="row m-0 justify-content-center text-white">
     <button class="button" type="submit" name="button">Senden</button>
   </div>
 </form>
-  </div>
+</div>
 
   <div class="row mt-3" style="height: 400px;">
     <div class="mapouter">
@@ -404,20 +404,20 @@
       </div>
     </div>
   </div>
-    <div class="container-fluid  text-white">
-      <div class="row border-bottom justify-content-start align-items-start mainColor" >
-        <h4 class="headline1">Zusätzliche Informationen</h4>
+    <div class="container-fluid p-0 text-white">
+      <div class="row m-0 border-bottom justify-content-start align-items-start mainColor" >
+        <h4 class="headline">Zusätzliche Informationen</h4>
       </div>
-      <div class="row justify-content-start mainColor">
+      <div class="row m-0 justify-content-start mainColor">
         <p>Adresse: Husumer Str. 8, 24941 Flensburg</p>
       </div>
-      <div class="row justify-content-start mainColor">
+      <div class="row m-0 justify-content-start mainColor">
         <p>Email: info@teamyak.de</p>
       </div>
-      <div class="row justify-content-start mainColor">
+      <div class="row m-0 justify-content-start mainColor">
         <p>Social Media: <a class="fa fa-facebook" href="#"></a>  <a class="fa fa-instagram" href="#"></a></p>
       </div>
-      <div class="row justify-content-start mainColor">
+      <div class="row m-0 justify-content-start mainColor">
         <a href="#">Zum Impressum</a>
       </div>
   </div>

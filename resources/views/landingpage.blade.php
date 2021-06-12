@@ -186,7 +186,7 @@
                </marquee>
             </div>
           </div>
-            <div class="row mt-2">
+            <div class="row m-0 mt-2">
               <p class="" style="">
                 {{DB::table('news')->value('message')}}
               </p>

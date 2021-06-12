@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{csrf_token()}}">
     <!-- <link href="bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet"> -->
-    <link href="{{asset('bootstrap-4.0.0-dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('/bootstrap-4.0.0-dist/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{asset('js/slick-1.8.1/slick/slick.css')}}"/> -->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">/ -->
@@ -13,96 +13,79 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/c869b225f8.js" crossorigin="anonymous"></script>
     <!-- jquery-->
-    <!-- <script  src="{{asset('js/jquery.js')}}"></script> -->
+    <script  src="{{asset('js/jquery.js')}}"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <!-- Bootstrap js -->
     <script  src="{{asset('bootstrap-4.0.0-dist/js/bootstrap.min.js')}}"></script>
     <title>Team Yak BJJ Flensburg</title>
     <!-- Styles -->
 <style media="screen">
+.hr1{
+   border-top: 1px solid white;
+   box-shadow: 0 0 9px 4px black;
+   width: 50%;
+}
 </style>
 <body>
-  <div class="" style="position: fixed; z-index: 200; top: 40%; margin-left: 0px; color:white;">
-  <!--
-    <input type="checkbox" id="hamburg" onclick="showSidebar()">
-      <label for="hamburg" class="hamburg">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-      </label> -->
 
-    <!-- <div class="popupmenu" style='position:absolute; left:50px; display:none; font-size: 1.5em;'>
-      <ul class="subissues" id='targetlist'>
-        <a href="#" onclick="showContactModal()"><li>
-          <div class="row m-2 d-flex">
-            <div class="col p-0 d-flex justify-content-center align-items-center">
-              <i class="material-icons">
-                email
-              </i>
-            </div>
-            <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-              <span>Schreibe uns</span>
-            </div>
+  <div id="popupmenu" style='display:none; font-size: 1.5em;'>
+    <ul class="subissues p-0 w-100" id='targetlist'>
+      <a onclick="toTheId('contact')"><li>
+        <div class="row m-2 ">
+          <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+            <i class="material-icons">
+              email
+            </i>
           </div>
-
-        </li></a>
-          <a href="#"><li>
-            <div class="row m-2">
-              <div class="col-2 p-0 d-flex justify-content-center align-items-center">
-                <i class="material-icons">
-                  dialpad
-                </i>
-              </div>
-              <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-                <span>Ruf uns an</span>
-              </div>
-            </div>
-
-        </li></a>
-        <a href="#top"><li>
-          <div class="row m-2">
-            <div class="col-2 p-0 d-flex justify-content-center align-items-center">
-              <i class="material-icons">
-                arrow_upward
-              </i>
-            </div>
-            <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-              <span>Zum Anfang</span>
-            </div>
+          <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
+            <span>Schreibe uns</span>
+          </div>
         </div>
-          </li></a>
-        <a href="#aboutus"><li>
+      </li>
+    </a>
+      <a onclick="toTheId('current')"><li>
+        <div class="row m-2">
+          <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+            <i class="material-icons">
+              arrow_upward
+            </i>
+          </div>
+          <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
+            <span>Zum Anfang</span>
+          </div>
+      </div>
+        </li>
+      </a>
+      <a onclick="toTheId('aboutus')"><li>
 
-          <div class="row m-2">
-            <div class="col-2 p-0 d-flex justify-content-center align-items-center">
-              <i class="material-icons">
-                info
-              </i>
-            </div>
-            <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-              <span>Über uns</span>
-            </div>
-        </div>
-        </li></a>
-        <a href="#aboutus"><li>
-
-          <div class="row m-2">
-            <div class="col-2 p-0 d-flex justify-content-center align-items-center">
-              <i class="material-icons">
-                account_tree
-              </i>
-            </div>
-            <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-              <span>Einsatzbereiche</span>
-            </div>
-        </div>
-        </li></a>
-      </ul>
-    </div> -->
+        <div class="row m-2">
+          <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+            <i class="material-icons">
+              info
+            </i>
+          </div>
+          <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
+            <span>Über uns</span>
+          </div>
+      </div>
+      </li></a>
+      <a onclick="toTheId('aboutbjj')"><li>
+        <div class="row m-2">
+          <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+            <i class="material-icons">
+              account_tree
+            </i>
+          </div>
+          <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
+            <span>Historie</span>
+          </div>
+      </div>
+      </li></a>
+    </ul>
+  </div>
+  <div class="" style="display:block; position: fixed; z-index: 200; top: 40%; margin-left: 0px; color:white;">
     <div class="" id="sidemenuwrapper" >
-
       <div class="row d-flex align-items-center justify-content-start m-0" >
-
           <div class="sidemenu text-white">
             <i class="material-icons" onclick="toTheId('contact')">
               email
@@ -111,9 +94,7 @@
               <span>Schreibe uns</span>
             </div>
           </div>
-
         </div>
-
         <div class="row d-flex align-items-center justify-content-start m-0" >
           <div class="sidemenu">
             <i class="material-icons" onclick="toTheId('aboutus')">
@@ -126,11 +107,11 @@
       </div>
         <div class="row d-flex align-items-center justify-content-start m-0" >
           <div class="sidemenu">
-            <i class="material-icons" onclick="toTheId('aboutus')">
+            <i class="material-icons" onclick="toTheId('aboutbjj')">
               account_tree
             </i>
             <div class="popupleft">
-              <span>Beispiele</span>
+              <span>Brasilian Jiu Jitsu</span>
             </div>
           </div>
       </div>
@@ -147,9 +128,8 @@
     </div>
 
   </div>
-<div class="container-fluid bg-light">
-
-  <div class="row sticky-top mainColor" id='stickynavmob'>
+<div class="container-fluid bg-light p-0">
+  <div class="row m-0 sticky-top mainColor" id='stickynavmob'>
     <div class="col d-flex justify-content-center align-items-center">
       <div class="navbar-wrapper">
         <input type="checkbox" id="hamburg" onclick="showSidebar()">
@@ -169,7 +149,7 @@
       </div>
     </div> -->
     <div class="col p-1 d-flex justify-content-end align-items-center">
-      <a href="#"><img src="https://static.wixstatic.com/media/f48c3a_bd5d30ff99ab4ab29a8621d05c2e190c~mv2.jpg/v1/fill/w_110,h_110,al_c,q_80,usm_0.66_1.00_0.01/f48c3a_bd5d30ff99ab4ab29a8621d05c2e190c~mv2.webp" alt="Teamlogo" style="width:110px;height:110px;object-fit:cover;object-position:50% 50%; border-radius: 50%;"></a>
+      <a href="#"><img src="/images/teamlogo2.jpg" alt="Teamlogo" style="width:110px;height:110px;object-fit:cover;object-position:50% 50%; border-radius: 50%;"></a>
     </div>
   </div>
   <div class="row sticky-top mainColor" id='stickynav'>
@@ -182,7 +162,7 @@
 
     </div>
     <div class="col d-flex justify-content-center align-items-center headline1">
-      <img src="https://static.wixstatic.com/media/f48c3a_bd5d30ff99ab4ab29a8621d05c2e190c~mv2.jpg/v1/fill/w_110,h_110,al_c,q_80,usm_0.66_1.00_0.01/f48c3a_bd5d30ff99ab4ab29a8621d05c2e190c~mv2.webp" alt="" style="width:110px;height:110px;object-fit:cover;object-position:50% 50%; border-radius: 50%;">
+      <img src="{{asset('images/teamlogo2.jpg')}}" alt="" style="width:110px;height:110px;object-fit:cover;object-position:50% 50%; border-radius: 50%;">
     </div>
     <div class="col d-flex justify-content-center align-items-center headline">
       <a href="#sport ">Sport</a>
@@ -192,13 +172,14 @@
     </div>
   </div>
   <div class="row justify-content-center mt-3">
+
     <div class="col-sm-11 col-md-8 p-0 " id="current">
       <div class="row justify-content-center">
         <p class="text-center headline1">🥋🤼 Team Yak 🤼🥋 <br> Brasilian Jiu Jitsu in Flensburg !</p>
       </div>
-      <div class="row justify-content-center mt-2 mainColor" >
+      <div class="row justify-content-center mt-2 mainColor" style="height: 50px;">
           <div class="col w-100 m-2">
-              <marquee behavior="scroll" direction="left" style="width: 100%; margin-top: 25px;">
+              <marquee behavior="scroll" direction="left" style="width: 100%;">
                 <div class="" style="font-size: 1.5em; font-weight: 750; color: white;">
                   <p>Breaking News</p>
                 </div>
@@ -207,13 +188,12 @@
           </div>
             <div class="row mt-2">
               <p class="" style="">
-
                 {{DB::table('news')->value('message')}}
               </p>
             </div>
-            <div class="row mt-2 mainColor" >
-              <div class="w-100 m-2 ">
-                <marquee behavior="scroll" direction="right" style="width: 100%; margin-top: 25px;">
+            <div class="row mt-2 mainColor" style="height: 50px;">
+              <div class="col w-100 m-2 ">
+                <marquee behavior="scroll" direction="right" style="width: 100%;">
                   <div class="" style="font-size: 1.5em; font-weight: 750; color: white;">
                     <p>Breaking News</p>
                   </div>
@@ -222,28 +202,26 @@
             </div>
     </div>
   </div>
-  <div class="row secondaryColor text-white justify-content-center mt-3">
-    <div class="col-sm-11 col-md-8 p-0 " id="aboutus">
-      <div class="row">
-        <h1><p class="text-center">Das ist Team Yak </p></h1>
+  <div class="row m-0 secondaryColor text-white justify-content-center mt-3">
+    <div class="col-sm-11 col-md-8 p-1 " id="aboutus">
+      <div class="row m-0">
+        <h1><p class=""><u>Das ist Team Yak </u></p></h1>
       </div>
-      <div class="row">
-        <p class="" style="margin-top: 55px;">
+      <div class="row m-0">
+        <p class="" style="margin-top: 25px;">
           Wir sind das erste BJJ Team Flensburgs. Gegründet wurde das Team Yak 2015 vom Braungurt Eitan Bronschtein. Derzeit Unterrichtet er BJJ im Ninja Sportclub e.V. in Hamburg. Das Training in Flensburg wird von den Brüdern Andreas & Kristoffer Madsen geleitet. Beide tragen einen lila Gurt der ihnen von Eitan Bronschtain 2020 und 2019 übergeben wurde und bringen zusammen mehr als 10 Jahre Erfahrung auf die Matte. Das Team steht für ein offenes Klima, das jede an dem Sport Interessierte Person herzlich aufnimmt und ein Teil des Teams werden lässt.
         </p>
       </div>
 
-      <div class="row mt-3">
-          <p class="headline1 text-center">Die Coaches</p>
+      <div class="row m-0 mt-3 ">
+          <p class="headline1 text-center"><u>Die Coaches</u></p>
       </div>
 
       <div class="row">
 
         <div class="col-sm m-1 d-flex align-items-center">
           <div class="" style="height:auto;">
-
-
-            <p class="headline">Christoffer Madsen</p>
+            <p class="headline">Kristoffer Madsen</p>
             <p>“Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
           </div>
         </div>
@@ -251,7 +229,7 @@
           <img src="https://thumbs.dreamstime.com/z/default-placeholder-fitness-trainer-t-shirt-default-placeholder-fitness-trainer-t-shirt-half-length-portrait-photo-113622062.jpg" class="img-fluid coachimg" alt="toffa">
         </div>
       </div>
-      <hr>
+      <hr class="">
       <div class="row mt-3">
         <div class="col-sm">
           <img src="https://thumbs.dreamstime.com/z/default-placeholder-fitness-trainer-t-shirt-default-placeholder-fitness-trainer-t-shirt-half-length-portrait-photo-113622062.jpg" class="img-fluid coachimg" alt="andreas2.0">
@@ -263,8 +241,8 @@
         </div>
         </div>
       </div>
-      <div class="row jsutify-content-center">
-          <p class="headline1">Das Team</p>
+      <div class="row m-0">
+          <p class="headline">Das Team</p>
       </div>
       <div class="row m-1">
         <div class="col d-flex justify-content-center">
@@ -312,10 +290,10 @@
     </div>
   </div>
 </div>
-<div class="row m-0 mt-4 justify-content-center w-100" >
-    <div class="d-flex" style="position:relative; height: 60%; width: 100vw" id='img_training' >
-      <!-- <img src="https://static.wixstatic.com/media/f48c3a_a73aa71819424fc182341062016b3e95~mv2.jpg/v1/fill/w_670,h_497,al_c,q_80/f48c3a_a73aa71819424fc182341062016b3e95~mv2.webp" alt="hintergrund.jpg" style="width: 100%;object-fit: cover; object-position: 50% 50%;"> -->
-      <div class="container" style="position: absolute; top: 25%; left: 50%; transform: translate(-50%,-50%);">
+<div class="row m-0 mt-4 justify-content-center w-100" style="height: 500px;">
+    <div class="d-flex" style="position:relative; width: 100vw" id='img_training' >
+
+      <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
         <div class="row justify-content-center">
           <div class="col-sm-5 m-2 p-2 d-flex justify-content-center bg-white shadow-lg" style="border-radius: 50px;">
             <div class="">
@@ -335,37 +313,54 @@
     </div>
   </div>
   <div class="row justify-content-center secondaryColor text-white mt-3">
-    <div class="col-sm-11 col-md-8" id="sport">
-      <p class="headline">Brazilian Jiu Jitsu / Grappling</p>
+    <div class="col-sm-11 col-md-8" id="aboutbjj" style="font-weight: 300;">
+      <p class="headline1"> <u>Brazilian Jiu Jitsu / Grappling</u></p>
+
       <p>Brasilianisches Jiu-Jitsu (BJJ) ist eine weiter entwickelte Form des japanischen Jujitsu. Das japanische Jujitsu, auch Nihon Jitsu genannt, konzentriert sich in seiner Anwendung hauptsächlich auf Selbstverteidigungsmechanismen im Stand. BJJ greift den Kampf im Stand mit auf und erweitert ihn mit Techniken am Boden. Der Bodenkampf ist das charakteristische Merkmal dieses Sports. Ein weiteres Unterscheidungsmerkmal dieser Kampfsportarten besteht in der Form des Unterrichts. BJJ vermittelt die Anwendung verschiedenster Techniken, in einen strategischen Kontext, der den Trainierenden offenlegt wie man sich gegen z.B. größere Kontrahenten durchsetzt. Die Simulation einer kämpferischen Auseinandersetzung wird wie in anderen Kampfsportarten als Sparring oder typischer für BJJ als "Rollen" bezeichnet und stellt einen festen Bestandteil des Trainings dar. </p>
+      <hr class="hr1">
+      <p class="mt-2 mb-2">Der bekannteste Name im brasilianischen Jiu-Jitsu ist der Familienname der Gracies. Die Gracie Familie modellierte ihre eigenen Kampfkunststil mit japanischem Judo und Ju Jitsu als Grundlage. Sie lernten diese Kampfkünste vom Japaner Mitsuyo Ma-eda, der 1914 im Auftrag der japanischen Regierung nach Brasilien reiste, um dort den Grundstein einer japanischen Kolonie in Südamerika zu legen. Mit großem Eifer widmete sich Maeda dieser Aufgabe, die sich mit der Zeit als äußerst schwer zu reali-sieren erwies. Letztlich scheiterte Maeda an der Erfüllung der Aufgabe. Ein einheimi-scher Brasilinaner mit Verbindungen in die Politik, namens Gastao Gracie, unterstüt-ze Maedas Vorhaben der Kolonialisierung Brasiliens. Aus der gemeinsamen Arbeit der zwei Männer wurde eine Freundschaft, die dazu führte, dass Maeda den Söhnen Gastaos im japanischen Judo und Jiu-Jitsu, während seines zweijährigen Aufenthalts in Brasilien, unterrichtete.
+      </p>
+    <hr class="hr1">
+      <p class="mt-2 mb-2">Die Gracie Brüder hatten in vielerlei Hinsicht gute Voraussetzungen in der kurzen Zeit die Kampfkünste zu erlernen und daraus eine neue Kampfkunst zu entwickeln. Eine gute Voraussetzung war bereits ihre schiere Anzahl an Familienmitgliedern.</p>
+      <hr class="hr1">
+      <p class="mt-2 mb-2">Die Gracie Brüder waren zu viert und alle waren stark involviert im Unterricht Mae-das. Das hatte den Vorteil, dass sie immer genug Trainingspartner hatten, um die Techniken zu üben und zu verfeinern. Die Brüder hatten alle samt viele Kinder, von denen ein Großteil passionierte Schüler*innen und später auch Lehrer*innen wurden. So entwickelte sich die Gracie Familie zu einer Art Forschungsteam, deren For-schungsfeld der unbewaffnete Kampf darstellte.
+        Die Gracies wurden nach der Beendigung des Trainings unter Maeda selbst zu Leh-rern der Kampfkünste, womit sie ihren Lebensunterhalt finanzierten. Als Leh-rer*innen hatten die Gracies die Möglichkeit ihre gesamte Zeit dem studieren und verfeinern der Techniken zu widmen.
+      </p>
+    <hr class="hr1">
+      <p class="mt-2 mb-2">Eine weitere positive Voraussetzung für die Entwicklung war, dass die Gracies alle eher durchschnittliche Körpertypen aufwiesen. Somit mussten die Techniken bezogen auf Funktionalität darauf ausgelegt sein, dass sie möglichst effizient ausgeführt wer-den können und keine physische Stärke voraussetzen.
+        Der letzte Vorteil, den die Gracies in ihrer Entwicklung nutzten, war ihre Autonomi-tät. In traditionellen Kampfkünsten ist es üblich die Tradition sehr stark zu betonen. Jede Form von Entwicklung und Veränderung steht somit unter keinem guten Licht und wird schnell als Verschmähung der antiken Großmeister verstanden. Da die Gra-cies auf sich allein gestellt waren, mussten sie keine alten Traditionen huldigen und hatten absolute Freiheit darin neue Techniken aufzunehmen und weniger effektive zu verwerfen. (Gracie, 2001)</p>
+
     </div>
 
   </div>
 
   <div class="row justify-content-center text-white">
-      <div class="col-3 m-2 p-2 ">
-        <img src="https://static.wixstatic.com/media/f48c3a_02bd9c31fee746fc829bb492f4ddabc3~mv2.jpg/v1/fill/w_692,h_519,al_c,q_80,usm_0.66_1.00_0.01/72754548_2191665604459662_39557093110526.webp" alt=""  class="img-fluid">
+      <div class="col-3 m-2 p-2 bwrd">
+        <img src="{{asset('images/72754548_2191665604459662_3955709311052677120_n.jpg')}}" alt=""  class="img-fluid">
       </div>
-      <div class="col-3 m-2 p-2 ">
-        <img src="https://static.wixstatic.com/media/f48c3a_02bd9c31fee746fc829bb492f4ddabc3~mv2.jpg/v1/fill/w_692,h_519,al_c,q_80,usm_0.66_1.00_0.01/72754548_2191665604459662_39557093110526.webp" alt="" class="img-fluid">
+      <div class="col-3 m-2 p-2 bwrd">
+        <img src="{{asset('images/72754548_2191665604459662_3955709311052677120_n.jpg')}}" alt="" class="img-fluid">
       </div>
-      <div class="col-3 m-2 p-2 ">
-        <img src="https://static.wixstatic.com/media/f48c3a_02bd9c31fee746fc829bb492f4ddabc3~mv2.jpg/v1/fill/w_692,h_519,al_c,q_80,usm_0.66_1.00_0.01/72754548_2191665604459662_39557093110526.webp" alt="" class="img-fluid">
-      </div>
-  </div>
-  <div class="container-fluid m-0 p-0 mt-3 secondaryColor">
-  <div class="row justify-content-center text-white">
-      <div class="col p-2">
-         <h4 id='contact' class="text-center headline">Kontakt</h4>
+      <div class="col-3 m-2 p-2 bwrd">
+        <img src="{{asset('images/72754548_2191665604459662_3955709311052677120_n.jpg')}}" alt="" class="img-fluid">
       </div>
   </div>
-  <div class="row justify-content-center text-white">
-      <div class="col-sm-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
-        <div class="w-100" style="display:block;">
-          <label for="name">Name</label>
-          <input type="text" name="" value="" class="customdg-input" id='name' placeholder='Max Mustermann'>
-        </div>
+  <div class="container-fluid m-0 p-0 mt-3  secondaryColor">
+  <div class="row text-white justify-content-center">
+      <div class="col-sm-12 col-md-6 p-2">
+         <h4 id='contact' class=" headline1"><u>Kontaktformular</u></h4>
       </div>
+  </div>
+  <form class="" action="{{route('sendNotification')}}" method="post">
+    @csrf
+
+  <div class="row justify-content-center text-white">
+    <div class="col-sm-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
+      <div class="w-100" style="display:block;">
+        <label for="name">Name</label>
+        <input type="text" name="name" value="" class="customdg-input" id='name' placeholder='Max Mustermann'>
+      </div>
+    </div>
   </div>
   <div class="row justify-content-center text-white">
       <div class="col-sm-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
@@ -379,7 +374,7 @@
       <div class="col-sm-12 col-md-6 p-2 d-flex justify-content-center align-items-center">
         <div class="w-100" style="display:block;">
           <label for="subject">Betreff</label>
-          <input type="text" name="" value="" class="customdg-input" id='subject' placeholder='Training am...'>
+          <input type="text" name="subject" value="" class="customdg-input" id='subject' placeholder='Training am...'>
         </div>
       </div>
   </div>
@@ -392,8 +387,9 @@
       </div>
   </div>
   <div class="row justify-content-center text-white">
-    <button class="button" type="button" name="button">Senden</button>
+    <button class="button" type="submit" name="button">Senden</button>
   </div>
+</form>
   </div>
 
   <div class="row mt-3" style="height: 400px;">
@@ -408,22 +404,20 @@
       </div>
     </div>
   </div>
-
-
-    <div class="container-fluid p-0  text-white">
-      <div class="row border-bottom justify-content-start align-items-center mainColor" >
-        <h4 class="headline1">Kontakt</h4>
+    <div class="container-fluid  text-white">
+      <div class="row border-bottom justify-content-start align-items-start mainColor" >
+        <h4 class="headline1">Zusätzliche Informationen</h4>
       </div>
-      <div class="row justify-content-center mainColor">
+      <div class="row justify-content-start mainColor">
         <p>Adresse: Husumer Str. 8, 24941 Flensburg</p>
       </div>
-      <div class="row justify-content-center mainColor">
+      <div class="row justify-content-start mainColor">
         <p>Email: info@teamyak.de</p>
       </div>
-      <div class="row justify-content-center mainColor">
+      <div class="row justify-content-start mainColor">
         <p>Social Media: <a class="fa fa-facebook" href="#"></a>  <a class="fa fa-instagram" href="#"></a></p>
       </div>
-      <div class="row justify-content-center mainColor">
+      <div class="row justify-content-start mainColor">
         <a href="#">Zum Impressum</a>
       </div>
   </div>

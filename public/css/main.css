@@ -12,6 +12,17 @@ body{
   border: 2px solid RGB(221, 65, 36);
   width: 50%;
 }
+#hamburg:checked + .hamburg .line:nth-child(1){
+  transform: translate(-53%,260%) rotate(-45deg);
+}
+#hamburg:checked + .hamburg .line:nth-child(2){
+opacity:0;
+}
+#hamburg:checked + .hamburg .line:nth-child(3){
+transform: translate(-50%,-190%) rotate(45deg);
+}
+input#hamburg {display:none}
+
 .button:hover
 {
   background-color: RGB(221, 65, 36);
@@ -26,6 +37,52 @@ body{
 {
 
 }
+label.hamburg {
+    /* display: block; */
+    background-color:rgb(0,0,0,0.5);
+
+    border-radius: 50%;
+    width: 11vmin;
+    height: 11vmin;
+    position: relative;
+}
+#targetlist
+{
+  list-style-type: none;
+}
+#popupmenu
+    {
+      background-color: rgba(0,0,0,0.8);
+      position: fixed;
+      left: 10%;
+      top: 150px;
+      z-index: 200;
+      width: 80%;
+      height: content;
+      /* max-width: 350px; */
+      animation: fadeInTop 2s ease-out forwards;
+    }
+  #popupmenu a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+  }
+.line {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 3px;
+  width: 7vmin;
+  background: #dddddd; border-radius: 2px;
+  display: block;
+  transition: 0.5s;
+  transform-origin: center;
+  }
+
+  .line:nth-child(1) { top: 3vmin; }
+  .line:nth-child(2) { top: 5vmin; }
+  .line:nth-child(3) { top: 7vmin; }
+
 .sidemenu
 {
   display: flex;
@@ -100,6 +157,11 @@ body{
   background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
 
 }
+.bwrd
+{
+  border-radius: 15px;
+  border : 2px solid black;
+}
 #stickynav
 {
   color: white;
@@ -107,11 +169,12 @@ body{
 }
 #img_training
 {
-  background-image: url('https://static.wixstatic.com/media/f48c3a_a73aa71819424fc182341062016b3e95~mv2.jpg/v1/fill/w_670,h_497,al_c,q_80/f48c3a_a73aa71819424fc182341062016b3e95~mv2.webp');
+  background-image: url('/images/hintergrund.jpg');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 500px;
 }
 .table-striped>tbody>tr:nth-child(even) {
     background-color: #ddf8e8;

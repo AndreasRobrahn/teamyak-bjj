@@ -25,4 +25,6 @@ Route::get('/72shssfsdgearadash2828282almessage', function () {
 
     return view('message');
 });
+
+Route::post('/sendNotification','App\Http\Controllers\MessageController@CustomerNotification')->name('sendNotification');
 Route::post('/messageupload', 'App\Http\Controllers\MessageController@storeMessage')->name('message.upload');

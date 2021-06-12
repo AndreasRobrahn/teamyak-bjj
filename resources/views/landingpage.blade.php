@@ -171,13 +171,13 @@
       <a href="#contact ">Kontakt </a>
     </div>
   </div>
-  <div class="row justify-content-center mt-3">
+  <div class="row m-0 justify-content-center mt-3">
 
     <div class="col-sm-11 col-md-8 p-0 " id="current">
       <div class="row justify-content-center">
         <p class="text-center headline1">🥋🤼 Team Yak 🤼🥋 <br> Brasilian Jiu Jitsu in Flensburg !</p>
       </div>
-      <div class="row justify-content-center mt-2 mainColor" style="height: 50px;">
+      <div class="row m-0 justify-content-center mt-2 mainColor" style="height: 50px;">
           <div class="col w-100 m-2">
               <marquee behavior="scroll" direction="left" style="width: 100%;">
                 <div class="" style="font-size: 1.5em; font-weight: 750; color: white;">
@@ -186,20 +186,20 @@
                </marquee>
             </div>
           </div>
-            <div class="row m-0 mt-2">
-              <p class="" style="">
-                {{DB::table('news')->value('message')}}
-              </p>
+          <div class="row m-0 mt-2 p-2">
+            <p class="" style="">
+              {{DB::table('news')->value('message')}}
+            </p>
+          </div>
+          <div class="row mt-2 mainColor" style="height: 50px;">
+            <div class="col w-100 m-2 ">
+              <marquee behavior="scroll" direction="right" style="width: 100%;">
+                <div class="" style="font-size: 1.5em; font-weight: 750; color: white;">
+                  <p>Breaking News</p>
+                </div>
+               </marquee>
             </div>
-            <div class="row mt-2 mainColor" style="height: 50px;">
-              <div class="col w-100 m-2 ">
-                <marquee behavior="scroll" direction="right" style="width: 100%;">
-                  <div class="" style="font-size: 1.5em; font-weight: 750; color: white;">
-                    <p>Breaking News</p>
-                  </div>
-                 </marquee>
-              </div>
-            </div>
+          </div>
     </div>
   </div>
   <div class="row m-0 secondaryColor text-white justify-content-center mt-3">

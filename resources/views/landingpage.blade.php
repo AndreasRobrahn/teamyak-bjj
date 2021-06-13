@@ -28,61 +28,7 @@
 </style>
 <body>
 
-  <div id="popupmenu" style='display:none; font-size: 1.5em;'>
-    <ul class="subissues p-0 w-100" id='targetlist'>
-      <a onclick="toTheId('contact')"><li>
-        <div class="row m-2 ">
-          <div class="col-2 p-0 d-flex justify-content-center align-items-center">
-            <i class="material-icons">
-              email
-            </i>
-          </div>
-          <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-            <span>Schreibe uns</span>
-          </div>
-        </div>
-      </li>
-    </a>
-      <a onclick="toTheId('current')"><li>
-        <div class="row m-2">
-          <div class="col-2 p-0 d-flex justify-content-center align-items-center">
-            <i class="material-icons">
-              arrow_upward
-            </i>
-          </div>
-          <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-            <span>Zum Anfang</span>
-          </div>
-      </div>
-        </li>
-      </a>
-      <a onclick="toTheId('aboutus')"><li>
 
-        <div class="row m-2">
-          <div class="col-2 p-0 d-flex justify-content-center align-items-center">
-            <i class="material-icons">
-              info
-            </i>
-          </div>
-          <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-            <span>Über uns</span>
-          </div>
-      </div>
-      </li></a>
-      <a onclick="toTheId('aboutbjj')"><li>
-        <div class="row m-2">
-          <div class="col-2 p-0 d-flex justify-content-center align-items-center">
-            <i class="material-icons">
-              account_tree
-            </i>
-          </div>
-          <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
-            <span>Historie</span>
-          </div>
-      </div>
-      </li></a>
-    </ul>
-  </div>
   <div class="" style="display:block; position: fixed; z-index: 200; top: 40%; margin-left: 0px; color:white;">
     <div class="" id="sidemenuwrapper" >
       <div class="row d-flex align-items-center justify-content-start m-0" >
@@ -151,6 +97,63 @@
     <div class="col p-1 d-flex justify-content-end align-items-center">
       <a href="#"><img src="/images/teamlogo2.jpg" alt="Teamlogo" style="width:110px;height:110px;object-fit:cover;object-position:50% 50%; border-radius: 50%;"></a>
     </div>
+    <div class="col-12 p-0">
+      <div id="popupmenu" style='display:none; font-size: 1.5em;'>
+        <ul class="subissues p-0 w-100" id='targetlist'>
+          <a onclick="toTheId('contact')"><li>
+            <div class="row m-2 ">
+              <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                <i class="material-icons">
+                  email
+                </i>
+              </div>
+              <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
+                <span>Schreibe uns</span>
+              </div>
+            </div>
+          </li>
+        </a>
+          <a onclick="toTheId('current')"><li>
+            <div class="row m-2">
+              <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                <i class="material-icons">
+                  arrow_upward
+                </i>
+              </div>
+              <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
+                <span>Zum Anfang</span>
+              </div>
+          </div>
+            </li>
+          </a>
+          <a onclick="toTheId('aboutus')"><li>
+
+            <div class="row m-2">
+              <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                <i class="material-icons">
+                  info
+                </i>
+              </div>
+              <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
+                <span>Über uns</span>
+              </div>
+          </div>
+          </li></a>
+          <a onclick="toTheId('aboutbjj')"><li>
+            <div class="row m-2">
+              <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                <i class="material-icons">
+                  account_tree
+                </i>
+              </div>
+              <div class="col p-0 d-flex justify-content-start textani1 align-items-center">
+                <span>Historie</span>
+              </div>
+          </div>
+          </li></a>
+        </ul>
+      </div>
+    </div>
   </div>
   <div class="row sticky-top mainColor" id='stickynav'>
     <div class="col d-flex justify-content-center align-items-center">
@@ -171,8 +174,8 @@
       <a href="#contact ">Kontakt </a>
     </div>
   </div>
-  <div class="row m-0 justify-content-center mt-3">
 
+  <div class="row m-0 justify-content-center mt-3">
     <div class="col-sm-11 col-md-8 p-0 " id="current">
       <div class="row justify-content-center">
         <p class="text-center headline1">🥋🤼 Team Yak 🤼🥋 <br> Brasilian Jiu Jitsu in Flensburg !</p>
@@ -191,7 +194,7 @@
               {{DB::table('news')->value('message')}}
             </p>
           </div>
-          <div class="row mt-2 mainColor" style="height: 50px;">
+          <div class="row m-0 mt-2 mainColor" style="height: 50px;">
             <div class="col w-100 m-2 ">
               <marquee behavior="scroll" direction="right" style="width: 100%;">
                 <div class="" style="font-size: 1.5em; font-weight: 750; color: white;">

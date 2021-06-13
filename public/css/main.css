@@ -53,9 +53,9 @@ label.hamburg {
 #popupmenu
     {
       background-color: rgba(0,0,0,0.8);
-      position: fixed;
+      position: absolute;
       left: 10%;
-      top: 150px;
+      top: 0px;
       z-index: 200;
       width: 80%;
       height: content;

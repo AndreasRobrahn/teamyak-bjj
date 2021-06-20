@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php // DEBUG:  ?>" dir="ltr">
+<html lang="de" dir="ltr">
 <head>
     <meta charset="utf-8">
     <meta name="title" content="Team Yak BJJ Flensburg">

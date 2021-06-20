@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="<?php // DEBUG:  ?>" dir="ltr">
 <head>
     <meta charset="utf-8">
+    <meta name="title" content="Team Yak BJJ Flensburg">
+    <meta name="description" content="Ein Kampfsportverein in Flensburg, der einzige richtige Brasilian Jiu Jitsu Verein in Flensburg">
+    <meta name="keywords" content="BJJ, BJJ Flensburg, Kampfsport Flensburg, Sportvereine Flensburg, Brasilian Jiu Jitsu">
+    <meta name="robots" content="index">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Andreas Robrahn">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{csrf_token()}}">
     <!-- <link href="bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet"> -->
@@ -17,13 +23,13 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <!-- Bootstrap js -->
     <script  src="{{asset('bootstrap-4.0.0-dist/js/bootstrap.min.js')}}"></script>
-    <title>Team Yak BJJ Flensburg</title>
     <!-- Styles -->
 <style media="screen">
 .hr1{
    border-top: 1px solid white;
-   box-shadow: 0 0 9px 4px black;
-   width: 50%;
+   box-shadow: 0 0 15px 2px black;
+   width: 25%;
+   /* height: 15px; */
 }
 </style>
 <body>
@@ -72,7 +78,6 @@
           </div>
       </div>
     </div>
-
   </div>
 <div class="container-fluid bg-light p-0">
   <div class="row m-0 sticky-top mainColor" id='stickynavmob'>
@@ -127,7 +132,6 @@
             </li>
           </a>
           <a onclick="toTheId('aboutus')"><li>
-
             <div class="row m-2">
               <div class="col-2 p-0 d-flex justify-content-center align-items-center">
                 <i class="material-icons">
@@ -158,11 +162,9 @@
   <div class="row sticky-top mainColor" id='stickynav'>
     <div class="col d-flex justify-content-center align-items-center">
       <a href="#aboutus "> <span class="headline1">Über uns</span></a>
-
     </div>
     <div class="col d-flex justify-content-center align-items-center headline1">
       <a href="#training">Training</a>
-
     </div>
     <div class="col d-flex justify-content-center align-items-center headline1">
       <img src="{{asset('images/teamlogo2.jpg')}}" alt="" style="width:110px;height:110px;object-fit:cover;object-position:50% 50%; border-radius: 50%;">
@@ -418,7 +420,7 @@
         <p>Email: info@teamyak.de</p>
       </div>
       <div class="row m-0 justify-content-start mainColor">
-        <p>Social Media: <a class="fa fa-facebook" href="#"></a>  <a class="fa fa-instagram" href="#"></a></p>
+        <p>Social Media: <a class="fa fa-facebook" href="https://de-de.facebook.com/yak.bjj.flensburg/"></a>  <a class="fa fa-instagram" href="https://www.instagram.com/teamyak_bjj/"></a></p>
       </div>
       <div class="row m-0 justify-content-start mainColor">
         <a href="#">Zum Impressum</a>

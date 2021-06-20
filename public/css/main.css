@@ -137,7 +137,8 @@ label.hamburg {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 50%;
+  border-radius: 15px;
+  border: 1px solid white;
 }
 .fa-facebook {
   background: black;

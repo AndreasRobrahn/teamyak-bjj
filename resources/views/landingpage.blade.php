@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php if (substr_count($_SERVER["HTTP_ACCEPT_ENCODING"], "gzip")) ob_start("ob_gzhandler"); else ob_start(); ?>
 <html lang="de" dir="ltr">
 <head>
     <meta charset="utf-8">
@@ -211,7 +212,7 @@
   <div class="row m-0 secondaryColor text-white justify-content-center mt-3">
     <div class="col-sm-11 col-md-8 p-1 " id="aboutus">
       <div class="row m-0">
-        <h1><u>Das ist Team Yak</u></h1>
+        <h2><u>Das ist Team Yak</u></h2>
       </div>
       <div class="row m-0">
         <p class="" style="margin-top: 25px;">

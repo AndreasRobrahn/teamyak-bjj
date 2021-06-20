@@ -211,7 +211,7 @@
   <div class="row m-0 secondaryColor text-white justify-content-center mt-3">
     <div class="col-sm-11 col-md-8 p-1 " id="aboutus">
       <div class="row m-0">
-        <h1><p class=""><u>Das ist Team Yak </u></p></h1>
+        <h1><u>Das ist Team Yak</u></h1>
       </div>
       <div class="row m-0">
         <p class="" style="margin-top: 25px;">
@@ -320,7 +320,7 @@
   </div>
   <div class="row justify-content-center secondaryColor text-white mt-3">
     <div class="col-sm-11 col-md-8" id="aboutbjj" style="font-weight: 300;">
-      <p class="headline1"> <u>Brazilian Jiu Jitsu / Grappling</u></p>
+      <h1 class="headline1"> <u>Brazilian Jiu Jitsu / Grappling</u></h1>
 
       <p>Brasilianisches Jiu-Jitsu (BJJ) ist eine weiter entwickelte Form des japanischen Jujitsu. Das japanische Jujitsu, auch Nihon Jitsu genannt, konzentriert sich in seiner Anwendung hauptsächlich auf Selbstverteidigungsmechanismen im Stand. BJJ greift den Kampf im Stand mit auf und erweitert ihn mit Techniken am Boden. Der Bodenkampf ist das charakteristische Merkmal dieses Sports. Ein weiteres Unterscheidungsmerkmal dieser Kampfsportarten besteht in der Form des Unterrichts. BJJ vermittelt die Anwendung verschiedenster Techniken, in einen strategischen Kontext, der den Trainierenden offenlegt wie man sich gegen z.B. größere Kontrahenten durchsetzt. Die Simulation einer kämpferischen Auseinandersetzung wird wie in anderen Kampfsportarten als Sparring oder typischer für BJJ als "Rollen" bezeichnet und stellt einen festen Bestandteil des Trainings dar. </p>
       <hr class="hr1">

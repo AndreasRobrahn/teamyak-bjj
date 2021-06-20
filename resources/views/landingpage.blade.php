@@ -42,7 +42,7 @@ a
 <body>
 
 
-  <div class="" style="display:block; position: fixed; z-index: 200; top: 40%; margin-left: 0px; color:white;">
+  <div class="" style="display:block; position: fixed; z-index: 200; top: 40%; right: 5px; color:white;">
     <div class="" id="sidemenuwrapper" >
       <div class="row d-flex align-items-center justify-content-start m-0" >
           <div class="sidemenu text-white">

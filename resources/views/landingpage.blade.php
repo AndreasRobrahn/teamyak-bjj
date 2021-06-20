@@ -33,6 +33,11 @@
    width: 25%;
    /* height: 15px; */
 }
+a
+{
+  text-decoration: none;
+  color: white;
+}
 </style>
 <body>
 
@@ -163,19 +168,19 @@
   </div>
   <div class="row sticky-top mainColor" id='stickynav'>
     <div class="col d-flex justify-content-center align-items-center">
-      <a href="#aboutus "> <span class="headline1">Über uns</span></a>
+      <a href="#aboutus"> <span class="headline">Über uns</span></a>
     </div>
-    <div class="col d-flex justify-content-center align-items-center headline1">
+    <div class="col d-flex justify-content-center align-items-center headline">
       <a href="#training">Training</a>
     </div>
-    <div class="col d-flex justify-content-center align-items-center headline1">
+    <div class="col d-flex justify-content-center align-items-center headline">
       <img src="{{asset('images/teamlogo2.jpg')}}" alt="" style="width:110px;height:110px;object-fit:cover;object-position:50% 50%; border-radius: 50%;">
     </div>
     <div class="col d-flex justify-content-center align-items-center headline">
-      <a href="#sport ">Sport</a>
+      <a href="#aboutbjj">Sport</a>
     </div>
     <div class="col d-flex justify-content-center align-items-center headline">
-      <a href="#contact ">Kontakt </a>
+      <a href="#contact">Kontakt </a>
     </div>
   </div>
 
@@ -233,13 +238,13 @@
           </div>
         </div>
         <div class="col-sm m-1">
-          <img src="https://thumbs.dreamstime.com/z/default-placeholder-fitness-trainer-t-shirt-default-placeholder-fitness-trainer-t-shirt-half-length-portrait-photo-113622062.jpg" class="img-fluid coachimg" alt="toffa">
+          <img src="" class="img-fluid coachimg" alt="k.madsen">
         </div>
       </div>
       <hr class="">
       <div class="row mt-3">
         <div class="col-sm">
-          <img src="https://thumbs.dreamstime.com/z/default-placeholder-fitness-trainer-t-shirt-default-placeholder-fitness-trainer-t-shirt-half-length-portrait-photo-113622062.jpg" class="img-fluid coachimg" alt="andreas2.0">
+          <img src="" class="img-fluid coachimg" alt="a.madsen">
         </div>
         <div class="col-sm m-1 d-flex align-items-center">
           <div class="">
@@ -253,7 +258,7 @@
       </div>
       <div class="row m-1">
         <div class="col d-flex justify-content-center">
-          <img src="https://www.seekpng.com/png/full/991-9910177_team-placeholder-team.png" class="img-fluid bg-white"    alt="">
+          <img src="" class="img-fluid bg-white"    alt="teamfoto">
         </div>
       </div>
     </div>
@@ -352,13 +357,13 @@
         <img src="{{asset('images/72754548_2191665604459662_3955709311052677120_n.jpg')}}" alt="" class="img-fluid">
       </div>
   </div>
-  <div class="container-fluid m-0 p-0 mt-3 secondaryColor">
+  <div class="container-fluid m-0 p-0 mt-3 secondaryColor" style="height: 70vh;">
   <div class="row m-0 text-white justify-content-center">
       <div class="col-sm-12 col-md-6 p-2">
          <h4 id='contact' class=" headline1"><u>Kontaktformular</u></h4>
       </div>
   </div>
-  <form class="" action="{{route('sendNotification')}}" method="post">
+  <form class="" action="{{route('sendNotification')}}" method="post" >
     @csrf
 
   <div class="row m-0 justify-content-center text-white">
@@ -393,7 +398,7 @@
         </div>
       </div>
   </div>
-  <div class="row m-0 justify-content-center text-white">
+  <div class="row m-0 mt-4 justify-content-center text-white">
     <button class="button" type="submit" name="button">Senden</button>
   </div>
 </form>
@@ -411,7 +416,7 @@
       </div>
     </div>
   </div>
-    <div class="container-fluid p-0 text-white">
+    <div class="container-fluid p-0 text-white" id="moreInfo">
       <div class="row m-0 border-bottom justify-content-start align-items-start mainColor" >
         <h4 class="headline">Zusätzliche Informationen</h4>
       </div>

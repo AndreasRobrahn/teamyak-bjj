@@ -24,6 +24,7 @@
     <!-- Bootstrap js -->
     <script  src="{{asset('bootstrap-4.0.0-dist/js/bootstrap.min.js')}}"></script>
     <!-- Styles -->
+    <title>Team Yak BJJ Flensburg</title>
 <style media="screen">
 .hr1{
    border-top: 1px solid white;

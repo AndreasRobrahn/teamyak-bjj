@@ -258,7 +258,7 @@ a
       </div>
       <div class="row m-1">
         <div class="col d-flex justify-content-center">
-          <img src="" class="img-fluid bg-white"    alt="teamfoto">
+          <img src="" class="img-fluid bg-white" alt="teamfoto">
         </div>
       </div>
     </div>
@@ -357,7 +357,7 @@ a
         <img src="{{asset('images/72754548_2191665604459662_3955709311052677120_n.jpg')}}" alt="" class="img-fluid">
       </div>
   </div>
-  <div class="container-fluid m-0 p-0 mt-3 secondaryColor" style="height: 70vh;">
+  <div class="container-fluid m-0 p-1 mt-3 secondaryColor" style="max-height: 145vh;">
   <div class="row m-0 text-white justify-content-center">
       <div class="col-sm-12 col-md-6 p-2">
          <h4 id='contact' class=" headline1"><u>Kontaktformular</u></h4>

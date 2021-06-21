@@ -3,12 +3,11 @@
 <html lang="de" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta name="title" content="Team Yak BJJ Flensburg">
+
     <meta name="google-site-verification" content="KsnioeLKELGLLCwjIDIYZjEIQElxVgZOIbp2sbNHNA8" />
-    <meta name="description" content="Ein Kampfsportverein in Flensburg, der einzige richtige Brasilian Jiu Jitsu Verein in Flensburg">
-    <meta name="keywords" content="BJJ, BJJ Flensburg, Kampfsport Flensburg, Sportvereine Flensburg, Brasilian Jiu Jitsu">
-    <meta name="robots" content="index">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Ein Kampfsportverein in Flensburg für Brasilian Jiu Jitsu ">
+    <meta name="keywords" content="BJJ, Flensburg, Kampfsport, Sportvereine, Brasilian Jiu Jitsu">
+    <meta name="robots" content="index, follow" />
     <meta name="author" content="Andreas Robrahn">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{csrf_token()}}">

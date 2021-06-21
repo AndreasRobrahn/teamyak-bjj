@@ -40,9 +40,7 @@ a
 }
 </style>
 <body>
-
-
-  <div class="" style="display:block; position: fixed; z-index: 200; top: 40%; right: 5px; color:white;">
+  <div class="" style="display:block; position: fixed; z-index: 200; top: 40%; right: 25px; color:white;">
     <div class="" id="sidemenuwrapper" >
       <div class="row d-flex align-items-center justify-content-start m-0" >
           <div class="sidemenu text-white">
@@ -86,7 +84,7 @@ a
       </div>
     </div>
   </div>
-<div class="container-fluid bg-light p-0">
+<div class="container-fluid bg-light p-0 m-0">
   <div class="row m-0 sticky-top mainColor" id='stickynavmob'>
     <div class="col d-flex justify-content-center align-items-center">
       <div class="navbar-wrapper">
@@ -166,7 +164,7 @@ a
       </div>
     </div>
   </div>
-  <div class="row sticky-top mainColor" id='stickynav'>
+  <div class="row m-0 sticky-top mainColor" id='stickynav'>
     <div class="col d-flex justify-content-center align-items-center">
       <a href="#aboutus"> <span class="headline">Über uns</span></a>
     </div>
@@ -263,7 +261,7 @@ a
       </div>
     </div>
   </div>
-  <div class="row m-1 bg-white justify-content-center mt-3">
+  <div class="row m-0 bg-white justify-content-center mt-3">
     <div class="col-sm-12 col-md-8 p-0 ">
       <p><h3 class="text-center headline1"><u>Unsere Trainingszeiten</u></h3> </p>
       <hr>
@@ -324,7 +322,7 @@ a
       </div>
     </div>
   </div>
-  <div class="row justify-content-center secondaryColor text-white mt-3">
+  <div class="row justify-content-center secondaryColor text-white m-0 mt-3">
     <div class="col-sm-11 col-md-8" id="aboutbjj" style="font-weight: 300;">
       <h1 class="headline1"> <u>Brazilian Jiu Jitsu / Grappling</u></h1>
 
@@ -346,7 +344,7 @@ a
 
   </div>
 
-  <div class="row justify-content-center text-white">
+  <div class="row m-0 justify-content-center text-white">
       <div class="col-3 m-2 p-2 bwrd">
         <img src="{{asset('images/72754548_2191665604459662_3955709311052677120_n.jpg')}}" alt=""  class="img-fluid">
       </div>
@@ -357,7 +355,7 @@ a
         <img src="{{asset('images/72754548_2191665604459662_3955709311052677120_n.jpg')}}" alt="" class="img-fluid">
       </div>
   </div>
-  <div class="container-fluid m-0 p-1 mt-3 secondaryColor" style="max-height: 145vh;">
+  <div class="container-fluid  secondaryColor p-0 m-0 mt-3" style="max-height: 145vh;">
   <div class="row m-0 text-white justify-content-center">
       <div class="col-sm-12 col-md-6 p-2">
          <h4 id='contact' class=" headline1"><u>Kontaktformular</u></h4>
@@ -404,7 +402,7 @@ a
 </form>
 </div>
 
-  <div class="row mt-3" style="height: 400px;">
+  <div class="row m-0 mt-3" style="height: 400px;">
     <div class="mapouter">
       <div class="gmap_canvas">
         <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=24939%20Flensburg,%20Husumer%20Str.%208&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="height: 100%; width: 100%;"></iframe>
@@ -416,20 +414,20 @@ a
       </div>
     </div>
   </div>
-    <div class="container-fluid p-0 text-white" id="moreInfo">
-      <div class="row m-0 border-bottom justify-content-start align-items-start mainColor" >
+    <div class="container-fluid  m-0 p-0 text-white" id="moreInfo">
+      <div class="row m-0 border-bottom justify-content-start align-items-start mainColor p-1" >
         <h4 class="headline">Zusätzliche Informationen</h4>
       </div>
-      <div class="row m-0 justify-content-start mainColor">
+      <div class="row m-0 justify-content-start mainColor p-1">
         <p>Adresse: Husumer Str. 8, 24941 Flensburg</p>
       </div>
-      <div class="row m-0 justify-content-start mainColor">
+      <div class="row m-0 justify-content-start mainColor p-1">
         <p>Email: info@teamyak.de</p>
       </div>
-      <div class="row m-0 justify-content-start mainColor">
+      <div class="row m-0 justify-content-start mainColor p-1">
         <p>Social Media: <a class="fa fa-facebook" href="https://de-de.facebook.com/yak.bjj.flensburg/"></a>  <a class="fa fa-instagram" href="https://www.instagram.com/teamyak_bjj/"></a></p>
       </div>
-      <div class="row m-0 justify-content-start mainColor">
+      <div class="row m-0 justify-content-start mainColor p-1">
         <a href="#">Zum Impressum</a>
       </div>
   </div>
